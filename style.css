@@ -17,10 +17,8 @@ body {
 .sidebar {
   background: #d92c2c;  /* strong orange-red */
   color: white;
-
   flex: 1;
   max-width: 280px;
-  background: #fff;
   padding: 2rem;
   border: 1px solid #ddd;
   border-radius: 8px;
