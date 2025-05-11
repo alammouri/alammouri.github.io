@@ -15,7 +15,7 @@ body {
 }
 
 .sidebar {
-  background: #f4a26;  /* strong orange-red */
+  background: #f4a261;  /* strong orange-red */
   color: white;
   flex: 1;
   max-width: 280px;
