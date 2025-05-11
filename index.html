@@ -4,54 +4,128 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ahmad AlAmmouri</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <div class="sidebar">
-      <img src="photo.jpg" alt="Ahmad AlAmmouri" />
-      <h1>Ahmad AlAmmouri</h1>
-      <p class="subtitle">Staff Research Engineer with PhD in Wireless Communications from UT Austin.</p>
-      
-<a href="https://www.linkedin.com/in/ahmad-alammouri" target="_blank" class="linkedin-icon">
-  <img src="linkedin.png" alt="LinkedIn" style="height: 28px; margin-top: 1rem;" />
-</a>
-
-      <p><a href="AlAmmouri_CV.pdf" target="_blank">Download CV</a></p>
+  <header class="hero">
+    <img src="photo.jpg" alt="Ahmad AlAmmouri">
+    <h1>Ahmad AlAmmouri</h1>
+    <p class="tagline">Wireless Systems Researcher · Builder · Math-Driven Thinker</p>
+    <div style="display: flex; justify-content: center; align-items: center; gap: 1rem; margin-top: 1rem;">
+      <a href="https://www.linkedin.com/in/ahmad-alammouri" class="button" target="_blank">Linkedin</a>
+      <a href="https://scholar.google.com/citations?user=fLUdXLgAAAAJ&hl=en&oi=ao" class="button" target="_blank">Google Scholar</a>
+      <a href="AlAmmouri_CV.pdf" class="button" target="_blank">Download CV</a>
     </div>
+    
+  </header>
+  <main class="content">
+  
+    
 
-    <div class="main-content">
-      <section>
-        <h2>About</h2>
-        <p>I am a Staff Research Engineer in Wireless Communications with a PhD from UT Austin. My work spans PHY-layer innovation, mmWave and FR3 systems, and stochastic modeling of wireless networks. I’m a co-inventor on 20+ patents and author of over 25 peer-reviewed publications.</p>
-    <p>During my PhD, I was jointly advised by Prof. Jeffrey Andrews and Prof. François Baccelli. I was a part of the Wireless Networking and Communications Group (WNCG) and the Simons Center for Mathematics of Networks.</p>
-      </section>
+    
+    
+    
 
-      <section>
-        <h2>Selected Publications</h2>
-        <ul>
-          <li><strong>[J4]</strong> A. AlAmmouri et al., “Extending Uplink Coverage of mmWave and Terahertz Systems Through Joint Phase-Time Arrays,” <em>IEEE Access</em>, 2022.</li>
-          <li><strong>[J3]</strong> A. AlAmmouri et al., “Hand Grip Impact on 5G mmWave Mobile Devices,” <em>IEEE Access</em>, 2019.</li>
-          <li><strong>[J2]</strong> A. AlAmmouri et al., “A Unified Asymptotic Analysis of Area Spectral Efficiency in Ultradense Cellular Networks,” <em>IEEE Trans. Inf. Theory</em>, 2018.</li>
-          <li><strong>[J1]</strong> A. AlAmmouri et al., “In-Band α-Duplex Scheme for Cellular Networks,” <em>IEEE Trans. Wireless Commun.</em>, 2016.</li>
-          <li><strong>[B1]</strong> “An Introduction to Cellular Network Analysis using Stochastic Geometry,” Springer, 2023.</li>
-        </ul>
-      </section>
+    <section class="about">
+      <h2>About</h2>
+      <p>I am a Staff Research Engineer at Samsung Research America, where I work in the Advanced MIMO team. I hold a PhD in Electrical Engineering from UT Austin, where I was jointly advised by Prof. Jeffrey Andrews and Prof. François Baccelli. During my PhD, I was part of both the Wireless Networking and Communications Group (WNCG) and the Simons Center for Mathematics of Networks.</p>
+      <p>I earned my MS in Electrical Engineering from King Abdullah University of Science and Technology (KAUST), where I was advised by Prof. Mohammed-Slim Alouini and worked closely with Prof. Hesham ElSawy.</p>
+      <p>My research focuses on PHY-layer innovation, mmWave and FR3 systems, and the stochastic modeling of wireless networks. I am a co-inventor on over 20 patents and the author of more than 25 peer-reviewed publications.</p>
+    </section>
 
-      <section>
-        <h2>Selected Patents</h2>
-        <ul>
-          <li>[P4] “SRS-Based Channel Reconstruction in Hybrid Cellular Systems,” 2023.</li>
-          <li>[P3] “Scheduling and Beam Design in JPTA,” 2023.</li>
-          <li>[P2] “Composite Beam Operation and Overhead Reduction,” 2022.</li>
-          <li>[P1] “Beam Management With Measurement Aging,” 2022.</li>
-        </ul>
-      </section>
+    <section class="research-experience">
+      <h2>Research Experience</h2>
+    
+      <div class="experience-block">
+        <div class="left">
+          <h3>Samsung Research America (SRA)<span class="location">Plano, Texas</span></h3>
+          <div class="experience-entry">
+            <p class="role">Staff Research Engineer <span class="date">Mar. 2024 – Now</span></p>
+            <ul>
+              <li>Coverage and capacity improvement for mmWave FWA through FWA-specific air algorithms.</li>
+              <li>Designed and implemented PoC for Joint Phase-Time Arrays enabling uplink coverage extension.</li>
+              <li>System-level feature planning and link budgeting for FR3 PoC with hybrid beamforming.</li>
+              <li>Liaison between three Samsung research hubs to ensure consistent direction and timely alignment across JPTA, FR3, and FWA projects.</li>
+            </ul>
+          </div>
+          <div class="experience-entry">
+            <p class="role">Senior Research Engineer <span class="date">Apr. 2021 – Feb. 2024</span></p>
+            <ul>
+              <li>Joint-time phase arrays for coverage extension and fast beam alignment in mmWave and THz.</li>
+              <li>Upper-mid band MU-MIMO feasibility, scheduling, hybrid precoding, and 3GPP-compliance.</li>
+              <li>Beam design and management for Samsung’s 5G mmWave BS.</li>
+              <li>Developing and maintaining System-level, link-level, and ray-tracing simulators.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      <div class="experience-block">
+        <div class="left">
+          <h3>National Institute for Research in Digital Science and Technology (INRIA)<span class="location">Paris, France</span></h3>
+          <div class="experience-entry">
+            <p class="role">Chateaubriand Researcher <span class="date">Jan. 2020 – Jul. 2020</span></p>
+            <ul><li>Data Traffic Dynamics in Cellular Networks.</li></ul>
+          </div>
+          <div class="experience-entry">
+            <p class="role">Visiting Researcher <span class="date">Apr. 2019 – Jul. 2019</span></p>
+            <ul><li>Data Traffic Dynamics in Cellular Networks.</li></ul>
+          </div>
+        </div>
+      </div>
+    
+      <div class="experience-block">
+        <div class="left">
+          <h3>Samsung Research America (SRA)<span class="location">Richardson, Texas</span></h3>
+          <div class="experience-entry">
+            <p class="role">Research Intern <span class="date">May 2018 – Aug. 2018</span></p>
+            <ul><li>Beam Codebook Design for 5G Mobile Devices With the Impact of User’s Handgrip.</li></ul>
+          </div>
+          <div class="experience-entry">
+            <p class="role">Research Intern <span class="date">May 2017 – Aug. 2017</span></p>
+            <ul><li>Integrated Access and Backhaul for 5G mmWaves Cellular Networks.</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <footer>
-        <p>&copy; 2025 Ahmad AlAmmouri</p>
-      </footer>
-    </div>
-  </div>
+    <section>
+      <h2>Publications</h2>
+      <ul>
+        <li><a href="https://link.springer.com/book/10.1007/978-3-031-29743-4"_blank">[B1] J. G. Andrews, A. K. Gupta, <strong>A. AlAmmouri</strong> , and H. S. Dhillon, “An Introduction to Cellular Network Analysis using Stochastic Geometry,” <em>Springer</em>, 2023.</a></li>
+        <li><a href="https://arxiv.org/abs/2412.01714" target="_blank">[J14] Y. Nam, <strong>A. AlAmmouri</strong>, J. Mo, J. C. Zhang, “Joint Phase Time Array: Opportunities, Challenges and System Design Considerations,” <em>IEEE Wireless Communcations</em>, 2025.</a></li>
+        <li><a href="https://ieeexplore.ieee.org/document/9863771" target="_blank">[J13] <strong>A. AlAmmouri</strong>, J. Mo, V. V. Ratnam, B. L. Ng, R. W. Heath, J. Lee, J. C. Zhang, “Extending Uplink Coverage of mmWave and Terahertz Systems Through Joint Phase-Time Arrays,” <em>IEEE Access</em>, 2022. </a></li>
+        <li><a href="https://ieeexplore.ieee.org/document/9826716" target="_blank">[J12] V. V. Ratnam, J. Mo, <strong>A. AlAmmouri</strong>, B. L. Ng, J. C. Zhang, A. F. Molisch, “Joint phase-time arrays: a paradigm for frequency-dependent analog beamforming in 6G,” <em>IEEE Access</em>, 2022. </a></li>
+        <li><a href="https://ieeexplore.ieee.org/document/9131876" target="_blank">[J11] <strong>A. AlAmmouri</strong>, M. Gupta, F. Baccelli, J. G. Andrews, “Escaping the Densification Plateau in Cellular Networks Through mmWave Beamforming,” <em>IEEE Wireless Communications Letters</em>, 2020. </a></li>
+        <li><a href="https://arxiv.org/abs/2002.04118" target="_blank">[J10] <strong>A. AlAmmouri</strong>, J. G. Andrews, F. Baccelli, “Area Spectral Efficiency and SINR Scaling Laws in Multi-Antenna Cellular Networks,” submitted to <em>IEEE Trans. Wireless Commun.</em>, 2020. </a></li>
+        <li><a href="https://ieeexplore.ieee.org/document/9199558" target="_blank">[J9] F. Mismar, <strong>A. AlAmmouri</strong>, A. Alkhateeb, J. G. Andrews, B. L. Evans, “Deep Learning Predictive Band Switching in Wireless Networks,” <em>IEEE Trans. Wireless Commun.</em>, 2020. </a></li>
+        <li><a href="https://arxiv.org/abs/1906.04683" target="_blank">[J8] <strong>A. AlAmmouri</strong>, J. G. Andrews, F. Baccelli, “Stability and Metastability of Traffic Dynamics in Uplink Random Access Networks,” submitted to <em>IEEE Trans. Info. Theory</em>, 2019. </a></li>
+        <li><a href="https://ieeexplore.ieee.org/document/8767936" target="_blank">[J7] J. Mo, B. L. Ng, P. Huang, M. Kulkarni, <strong>A. AlAmmouri</strong>, J. C. Zhang, S. Chang, J. Lee, W.-J. Choi, “Beam Codebook Design for 5G mmWave Terminals,” <em>IEEE Access</em>, 2019. </a></li>
+        <li><a href="https://ieeexplore.ieee.org/document/8705216/" target="_blank">[J6] <strong>A. AlAmmouri</strong>, J. Mo, B. L. Ng, J. C. Zhang, J. G. Andrews, “Hand Grip Impact on 5G mmWave Mobile Devices,” <em>IEEE Access</em>, 2019. </a></li>
+        <li><a href="https://ieeexplore.ieee.org/document/8375976/" target="_blank">[J5] <strong>A. AlAmmouri</strong>, J. G. Andrews, F. Baccelli, “A Unified Asymptotic Analysis of Area Spectral Efficiency in Ultradense Cellular Networks,” <em>IEEE Trans. Info. Theory</em>, 2018. </a></li>
+        <li><a href="https://ieeexplore.ieee.org/document/8122033/" target="_blank">[J4] <strong>A. AlAmmouri</strong>, J. G. Andrews, F. Baccelli, “SINR and Throughput of Dense Cellular Networks with Stretched Exponential Path Loss,” <em>IEEE Trans. Wireless Commun.</em>, 2017. </a></li>
+        <li><a href="http://ieeexplore.ieee.org/document/7490343/" target="_blank">[J3] <strong>A. AlAmmouri</strong>, H. ElSawy, M. -S. Alouini, “Flexible Design for α–Duplex Communications in Multi-tier Cellular Networks,” <em>IEEE Trans. Commun.</em>, 2016. </a></li>
+        <li><a href="http://ieeexplore.ieee.org/document/7511737/" target="_blank">[J2] <strong>A. AlAmmouri</strong>, H. ElSawy, O. Amin, M. -S. Alouini, “In-Band α-Duplex Scheme for Cellular Networks: A Stochastic Geometry Approach,” <em>IEEE Trans. Wireless Commun.</em>, 2016. </a></li>
+        <li><a href="http://onlinelibrary.wiley.com/doi/10.1002/dac.3147/full" target="_blank">[J1] M. Hawa, <strong>A. AlAmmouri</strong>, A. Alhiary, N. Alhamad, “Distributed Opportunistic Spectrum Sharing in Cognitive Radio Networks,” <em>Int. J. Commun. Syst.</em>, 2016. </a></li>
+        <li><a href="https://ieeexplore.ieee.org/abstract/document/10942922" target="_blank">[C12] J. Mo, <strong>A. AlAmmouri</strong>, S. Dong, Y. Nam, W. Choi, G. Xu,  J. C. Zhang, “Beamforming with Joint Phase and Time Array: System Design, Prototyping and Performance,” <em>IEEE Asilomar Conference</em>, 2024.</a></li>
+        <li><a href="https://ieeexplore.ieee.org/abstract/document/10757955/" target="_blank">[C11] O. Yildiz, <strong>A. AlAmmouri</strong>, J. Mo, Y. Nam, E. Erkip and J. C. Zhang, “3D Beamforming Through Joint Phase-Time Arrays,” <em>IEEE Asilomar Conference</em>, 2024.</a></li>
+        <li><a href="https://ieeexplore.ieee.org/abstract/document/9443462/" target="_blank">[C10] <strong>A. AlAmmouri</strong>, J. G. Andrews, F. Baccelli, “Scaling Laws of Dense Multi-Antenna Cellular Networks,” <em>VTC2024-Fall</em>, 2020.</a></li>
+        <li><a href="https://ieeexplore.ieee.org/abstract/document/8919898/" target="_blank">[C9] <strong>A. AlAmmouri</strong>, J. G. Andrews, F. Baccelli, “Stability of Wireless Random Access Systems,” <em>Allerton Conference</em>, 2019. </a></li>
+        <li><a href="https://ieeexplore.ieee.org/abstract/document/9014196/" target="_blank">[C8] <strong>A. AlAmmouri</strong>, J. Mo, B. L. Ng, J. C. Zhang, J. G. Andrews, “Grip-Aware Analog mmWave Beam Codebook Adaptation for 5G Mobile Handsets,” <em>IEEE GLOBECOM</em>, 2019. </a></li>
+        <li><a href="https://ieeexplore.ieee.org/abstract/document/8437555/" target="_blank">[C7] <strong>A. AlAmmouri</strong>, J. G. Andrews, F. Baccelli, “Asymptotic Analysis of Area Spectral Efficiency in Dense Cellular Networks,” <em>IEEE ISIT</em>, 2018. </a></li>
+        <li><a href="https://ieeexplore.ieee.org/document/8335680/" target="_blank">[C6] <strong>A. AlAmmouri</strong>, J. G. Andrews, F. Baccelli, “Analysis of Dense Cellular Networks with Stretched Exponential Path Loss,” <em>IEEE Asilomar</em>, 2017. </a></li>
+        <li><a href="http://ieeexplore.ieee.org/document/7499332/" target="_blank">[C5] H. ElSawy, <strong>A. AlAmmouri</strong>, O. Amin, M. -S. Alouini, “Can Uplink Transmissions Survive in Full-Duplex Cellular Environments?,” <em>European Wireless Conference</em>, 2016. </a></li>
+        <li><a href="http://ieeexplore.ieee.org/document/7510903/" target="_blank">[C4] <strong>A. AlAmmouri</strong>, H. ElSawy, A. Sultan, M. D. Renzo, M. -S. Alouini, “Modeling Cellular Networks in Fading Environments with Dominant Specular Components,” <em>IEEE ICC</em>, 2016. </a></li>
+        <li><a href="http://ieeexplore.ieee.org/document/7510864/" target="_blank">[C3] <strong>A. AlAmmouri</strong>, H. ElSawy, M. -S. Alouini, “Harvesting Full-Duplex Rate Gains in Cellular Networks with Half-Duplex User Terminals,” <em>IEEE ICC</em>, 2016. </a></li>
+        <li><a href="http://ieeexplore.ieee.org/document/7417619/" target="_blank">[C2] <strong>A. AlAmmouri</strong>, H. ElSawy, O. Amin, M. -S. Alouini, “In-Band Full-Duplex Communications for Cellular Networks with Partial Uplink/Downlink Overlap,” <em>IEEE GLOBECOM</em>, 2015. </a></li>
+        <li><a href="http://ieeexplore.ieee.org/document/7136422/" target="_blank">[C1] <strong>A. AlAmmouri</strong>, H. ElSawy, M.-S. Alouini, “Load-Aware Modeling for Uplink Cellular Networks in a Multi-Channel Environment,” <em>IEEE PIMRC</em>, 2014. </a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ahmad AlAmmouri</p>
+  </footer>
 </body>
 </html>

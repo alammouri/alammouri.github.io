@@ -1,123 +1,248 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #fdfdfd;
-  color: #333;
   margin: 0;
-  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f9f9f9;
+  color: #2c3e50;
 }
 
-.container {
-  display: flex;
-  max-width: 1200px;
-  margin: auto;
-  padding: 2rem;
-  gap: 2rem;
-}
-
-.sidebar {
-  flex: 1;
-  max-width: 280px;
-  background: #fff;
-  padding: 2rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+.hero {
   text-align: center;
+  background: linear-gradient(135deg, #f4a261, #e76f51);
+  color: white;
+  padding: 3rem 1rem 2rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
-.sidebar img {
-  width: 120px;
-  height: 120px;
+.hero h1 {
+  margin: 0.3rem 0;
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  animation: fadeInSlide 1.2s ease-out;
+}
+
+.tagline {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 0.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.icon-button img {
+  height: 24px;
+  width: 24px;
+  border-radius: 4px;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+  vertical-align: middle;
+}
+
+.icon-button img:hover {
+  transform: scale(1.1);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul li {
+  margin-bottom: 1rem;
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+ul li {
+  margin-bottom: 1rem;
+  transition: transform 0.2s ease;
+}
+
+ul li:hover {
+  animation: wiggle 0.3s ease-in-out;
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-1deg); }
+  50% { transform: rotate(1deg); }
+  75% { transform: rotate(-1deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.hero img {
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
+  border: 3px solid white;
   object-fit: cover;
   margin-bottom: 1rem;
-  border: 1px solid #ccc;
 }
 
-.sidebar h1 {
-  font-size: 1.5rem;
-  margin: 0.5rem 0;
-  color: #111;
-}
-
-.sidebar .subtitle {
-  font-size: 0.95rem;
-  color: #666;
-  margin-bottom: 1rem;
-}
-
-.sidebar .contact a {
-  color: #d92c2c;
+.button, .icon-button {
+  display: inline-block;
+  margin: 0.3rem 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background: white;
+  color: #e76f51;
   font-weight: bold;
   text-decoration: none;
+  border-radius: 30px;
+  transition: background 0.3s;
 }
 
-.sidebar p a {
-  color: #003366;
-  text-decoration: none;
-  font-weight: 500;
+.button:hover {
+  background: #fcefe8;
 }
 
-.sidebar p a:hover {
-  text-decoration: underline;
-}
 
-.main-content {
-  flex: 2.5;
-  background: #fff;
+
+.content {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: white;
   padding: 2rem;
-  border-radius: 8px;
-  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 h2 {
-  color: #d92c2c;
+  color: #e76f51;
   font-size: 1.3rem;
   border-bottom: 1px solid #eee;
-  padding-bottom: 0.25rem;
-  margin-top: 0;
+  padding-bottom: 0.3rem;
 }
 
 ul {
   padding-left: 1.2rem;
-  margin-bottom: 2rem;
 }
 
 footer {
   text-align: center;
+  color: #888;
   font-size: 0.9rem;
-  color: #777;
-  margin-top: 3rem;
+  margin: 3rem 0 1rem;
 }
 
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    padding: 1rem;
-  }
 
-  .sidebar {
-    max-width: 100%;
-    margin-bottom: 1rem;
-  }
+.research-experience {
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+}
 
-  .main-content {
-    padding: 1.5rem;
-  }
+.research-experience ul li {
+  font-size: inherit;
+  line-height: inherit;
+}
+.highlight-r {
+  color: #e76f51;
+  font-weight: bold;
+}
 
-  .sidebar img {
-    width: 100px;
-    height: 100px;
-  }
+.experience-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;  /* Add this to separate blocks cleanly */
+}
 
-  .sidebar h1 {
-    font-size: 1.4rem;
-  }
+.experience-block .left {
+  flex: 3;
+}
 
-  .sidebar .subtitle {
-    font-size: 0.9rem;
-  }
+.experience-entry {
+  margin-bottom: 0.4rem;
+}
 
-  h2 {
-    font-size: 1.2rem;
-  }
+.experience-block .right {
+  flex: 1;
+  text-align: right;
+  font-style: italic;
+  color: #e76f51;
+}
+
+.experience-block h3 {
+  margin-bottom: 0.25rem;
+}
+
+.role {
+  font-variant: small-caps;
+  font-weight: 600;
+  margin: 0.25rem 0;
+}
+
+.research-experience h2 {
+  font-size: 1.4rem;
+  color: #e76f51;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+
+.experience-block ul,
+.experience-block p {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+
+
+
+
+.role .date {
+  float: right;
+  font-style: italic;
+  font-weight: normal;
+  color: #e76f51;
+}
+
+.experience-entry ul {
+  margin: 0.2rem 0 0.5rem 1rem;
+  padding-left: 1rem;
+}
+
+.experience-entry ul li {
+  margin-bottom: 0.3rem;
+}
+
+
+.research-experience ul li {
+  animation: none;
+  transform: none;
+  transition: font-weight 0.2s;
+}
+
+.research-experience ul li:hover {
+  font-weight: bold;
+}
+
+.location {
+  font-style: italic;
+  font-weight: normal;
+  color: #888;
+  font-size: 0.95rem;
+  margin-left: 0.5rem;
+}
+
+.about {
+  font-size: 1.05rem;  /* try 1.1rem or higher if still too small */
+  line-height: 1.7;
+  margin-bottom: 2rem;
 }
