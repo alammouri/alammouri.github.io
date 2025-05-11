@@ -1,0 +1,60 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.header .left h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #002244;
+}
+
+.subtitle {
+    color: #555;
+}
+
+.header .right img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #002244;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+footer {
+    text-align: center;
+    color: #777;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
